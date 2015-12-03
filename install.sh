@@ -26,19 +26,17 @@ curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 npm install noble
-sleep 1
-clear
+
 
 #install wiring Pi for gpio pin
 sleep 1
 git clone git://git.drogon.net/wiringPi
 cd wiringPi
 sudo ./build
-cd ~/Health
+cd ~/NobleHealth
 sleep 1
 
 
 #Permission for shell script file
 sudo chmod 755 ibeacon_scan
-sudo chmod 755 sensor
-
+mv test.js node_modules/noble
