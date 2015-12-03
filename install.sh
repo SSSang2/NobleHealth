@@ -29,12 +29,10 @@ npm install noble
 
 
 #install wiring Pi for gpio pin
-sleep 1
 git clone git://git.drogon.net/wiringPi
 cd wiringPi
 sudo ./build
 cd ~/NobleHealth
-sleep 1
 
 
 #Permission for shell script file
